@@ -1,0 +1,53 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <MultiSelectListPreference
+        android:key="key"
+        android:title="Vos gou"
+        android:summary="@string/bottom_sheet_behavior"
+        android:entries="@array/pref_color_label"
+        android:entryValues="@array/pref_color_value" />
+
+    <SeekBarPreference
+        android:key="@string/pref_progression"
+        app:defaultValue="12"
+        android:max="100"
+        app:min="0"
+        app:adjustable="true"
+        android:title="Volume"/>
+
+    <SwitchPreferenceCompat
+        android:icon="@android:drawable/ic_delete"
+        android:defaultValue="true"
+        app:summaryOff="Desactiver"
+        app:summaryOn="Activer"
+        app:key="notifications"
+        app:title="Enable message notifications"/>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:icon="@drawable/abc_vector_test"
+        android:persistent="true"
+        app:key="dfd"
+        app:summaryOff="Desactiver"
+        app:summaryOn="Activer"
+        app:title="Auto Update" />
+
+
+    <ListPreference
+        app:title="@string/pref_color_title"
+        android:summary="@string/pref_color_summary"
+        android:key="@string/pref_color_key"
+        android:entries="@array/pref_color_label"
+        android:entryValues="@array/pref_color_value"
+        android:defaultValue="@string/pref_color_defaul_value" />
+
+    <EditTextPreference
+        android:inputType="number"
+        android:key="@string/pref_amount_key"
+        android:singleLine="true"
+        android:title="Min Amount"
+        app:defaultValue="true" />
+
+
+</PreferenceScreen>

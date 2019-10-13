@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_check_box"/>
+    <item
+        android:state_hovered="true"
+        android:drawable="@drawable/ic_check_box_check" tools:ignore="StateListReachable" />
+</selector>
