@@ -11,7 +11,7 @@ class UserRepository(private val userApi: UserApi, private val userDao: UserDao)
 
     suspend fun refresh() {
         withContext(Dispatchers.IO) {
-            val users = userApi.getAll().await()
+            val users = userApi.getAllAsync().await()
             userDao.add(users)
         }
     }
