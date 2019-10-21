@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface UserApi {
 
-    @GET("/users")
+    @GET("users")
     fun getAllAsync(): Deferred<List<GithubUser>>
 }
