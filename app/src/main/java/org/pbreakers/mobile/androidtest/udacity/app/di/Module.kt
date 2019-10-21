@@ -76,12 +76,12 @@ val databaseModule = module {
     }
 
 
-    fun providePanierDao(database: AppDatabase): UserDao {
+    fun provideDao(database: AppDatabase): UserDao {
         return database.userDao
     }
 
     single { provideDatabase(androidApplication()) }
-    single { providePanierDao(get()) }
+    single { provideDao(get()) }
 }
 
 val repositoryModule = module {
